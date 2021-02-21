@@ -84,7 +84,7 @@
 	font-size: 14px;
 }
 .navbar .action-form a {		
-	color: #33cabb;
+	color: #69c004 !important;
 	padding: 0 !important;
 	font-size: 14px;
 }
@@ -95,12 +95,12 @@
 }
 .navbar .btn-primary, .navbar .btn-primary:active {
 	color: #fff;
-	background: #33cabb !important;
+	background: #69c004 !important;
 	border: none;
 }	
 .navbar .btn-primary:hover, .navbar .btn-primary:focus {		
 	color: #fff;
-	background: #31bfb1 !important;
+	background: #69c004 !important;
 }
 .navbar .social-btn .btn, .navbar .social-btn .btn:hover {
 	color: #fff;
@@ -188,4 +188,15 @@ height: 50vh;
 }
 .box_back1{
 	float: left;
+}
+.nn{
+	background-color: rgba(65, 62, 62, 0.3);
+}
+ .btn{
+	border-radius: 20px;
+ }
+ @media (max-width: 400px){
+     img {
+		width: 20vw !important;
+	}
 }

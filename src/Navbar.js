@@ -3,6 +3,7 @@ import { Link, useHistory } from "react-router-dom";
 import Axios from "./axios";
 import "./Navbar.css";
 import { toast } from "react-toastify";
+import Logo from "./icon/logo.png"
 toast.configure();
 function Navbar() {
 
@@ -102,71 +103,46 @@ function Navbar() {
     };
     
 
-    
-
+   
 
     return (
-        <div>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <a href="#" className="navbar-brand">Wonder <b>Weddings</b></a>
+        <div >
+            <nav className=" navbar navbar-expand-lg navbar-light bg-light">
+                {/* <a href="#" className="navbar-brand">learn <b>a skill</b></a> */}
+               
+               
+                          
+                            <div class="logo1">
+                                <a><img style={{width:"14vw"}} src={Logo}alt=""/></a>
+                            </div>  
+                        
                 <button type="button" className="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span className="navbar-toggler-icon" />
                 </button>
 
                 <div id="navbarCollapse" className="collapse navbar-collapse justify-content-start">
                     <div className="navbar-nav">
-                        <Link to="/">
+                        
+                           
+                           <Link to="/">
                             <li class="active "><a >Home</a></li>
-                        </Link>
-                        {/* <div className="  action-buttons mt-3">
-                            <div className=" dropdown ">
-                                <a href="#" data-toggle="dropdown" className=" dropdown-toggle  mr-4">Venues</a>
-                                <div className="dropdown-menu  mt-4 ms ">
-
-                                    <form>
-                                        <div >
-                                            <ul class="list-menu">
-                                                <li ><a href="#">Pune  </a></li>
-                                                <li ><a href="#">Mumbai </a></li>
-                                                <li><a href="#">Thane  </a></li>
-                                                <li ><a href="#">Ahmednagar  </a></li>
-                                                <li><a href="#">Bhusawal </a></li>
-                                                <li ><a href="#">Satara</a></li>
-                                                <li ><a href="#">Aurangabad </a></li>
-                                            </ul>
-                                        </div>
-
-                                    </form>
-                                </div>
-                            </div>
-
-                        </div> */}
-                        <Link to="/Profile_create">
-                            <li class="active "><a >Create Profile</a></li>
-                        </Link>
-                        <a href="#" className="nav-item nav-link ml-5">About</a>
-                        <div className="nav-item dropdown ml-5">
-                            <a href="#" data-toggle="dropdown" className="nav-item nav-link dropdown-toggle ml-5">Loction</a>
-                            <div className="dropdown-menu">
-                                <a href="#" className="dropdown-item">Pune</a>
-                                <a href="#" className="dropdown-item">Mumbai</a>
-                                <a href="#" className="dropdown-item">Thane</a>
-                                <a href="#" className="dropdown-item">Ahmednagar</a>
-                                <a href="#" className="dropdown-item"> Bhusawal</a>
-                            </div>
-                        </div>
-
+                           
+                           </Link>
+                           <Link to="/Profile_create">
+                            <li class="active "><a >Profile_create</a></li>
+                           </Link>
+                      
                     </div>
 
-                    <div className="navbar-nav ml-auto action-buttons">
+                    <div className="navbar-nav ml-auto action-buttons ">
                         {user ? (<>
                             <a href="#" className=" btn btn-primary login-btn mr-4" onClick={handleChange_logout}>Logout</a>
                             <a href="#" style={{ "textTransform": "lowercase" }} className="  btn btn-primary login-btn mr-4">{user}</a>
                         </>) : (<>
 
-                            <div className="nav-item dropdown ">
-                                <a href="#" data-toggle="dropdown" className=" btn btn-primary dropdown-toggle login_button  login-btn mr-4">Login</a>
-                                <div className="dropdown-menu action-form mt-3" id="spn3">
+                            <div className="nav-item dropdown mr-4 ">
+                                <a href="#" data-toggle="dropdown" className=" btn btn-primary dropdown-toggle login_button  login-btn ">Login</a>
+                                <div className="dropdown-menu action-form mt-3 nn" id="spn3">
                                     <form action="/examples/actions/confirmation.php" method="post" onSubmit={handleSubmit}>
                                         <p className="hint-text">Sign in with your social media account</p>
                                         <div className="form-group social-btn clearfix">
@@ -199,8 +175,8 @@ function Navbar() {
                                 </div>
                             </div>
                             <div className="nav-item dropdown">
-                                <a href="#" data-toggle="dropdown" className="btn btn-primary dropdown-toggle sign-up-btn">Sign up</a>
-                                <div className="dropdown-menu action-form mt-3" id="spn3">
+                                <a href="#" data-toggle="dropdown" className="btn btn-primary dropdown-toggle  sign-up-btn">Sign up</a>
+                                <div className="dropdown-menu action-form mt-3 nn" id="spn3">
                                     <form action="/examples/actions/confirmation.php" method="post" onSubmit={handleSubmit_signup}>
                                         <p className="hint-text">Fill in this form to create your account!</p>
                                         <div className="form-group">
