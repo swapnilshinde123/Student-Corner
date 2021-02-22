@@ -1,14 +1,45 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import img2 from "./corousel_photo/img6.jpg"
 function class_list() {
     return (
         <div>
-        
+           <div class="container container1  mt-3 ">
+     
+     <div class="section" id="carousel">
+     
+         <div >
+             <div class="col-md-12  col-lg-12 mr-auto ml-auto">
+
+                
+                 <div class=" card-raised card-carousel">
+                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+                       
+                       <div class="carousel-inner">
+                         <div class="carousel-item active">
+                           <img class="d-block w-100" src={img2}
+                           alt="First slide"/>
+                           <div class="carousel-caption d-none d-md-block">
+                            
+                           </div>
+                         </div>
+                         
+                       </div>
+                       
+                      
+                     </div>
+                 </div>
+                
+
+             </div>
+         </div>
+    
+ </div>
+ </div>
         <main>
          
           {/* Job List Area Start */}
-          <div className="job-listing-area pt-120 pb-120">
+          <div className="job-listing-area mt-5 pb-120">
             <div className="container">
               <div className="row">
                 {/* Left content */}
@@ -204,15 +235,15 @@ function class_list() {
                             </a>
                             <ul>
                               <li>Creative Agency</li>
-                              <li><i className="fas fa-map-marker-alt" />Athens, Greece</li>
-                              <li>$3500 - $4000</li>
+                              <li><i className="fas fa-map-marker-alt" />Pune</li>
+                              <li>Rs.3000</li>
                             </ul>
                           </div>
                           </Link>
                         </div>
                        
                         <div className="items-link items-link2 f-right">
-                          <a href="job_details.html">Full Time</a>
+                          
                           <span>7 hours ago</span>
                         </div>
                       </div>
@@ -234,7 +265,7 @@ function class_list() {
                           </div>
                         </div>
                         <div className="items-link items-link2 f-right">
-                          <a href="job_details.html">Full Time</a>
+                         
                           <span>7 hours ago</span>
                         </div>
                       </div>
@@ -256,7 +287,7 @@ function class_list() {
                           </div>
                         </div>
                         <div className="items-link items-link2 f-right">
-                          <a href="job_details.html">Full Time</a>
+                         
                           <span>7 hours ago</span>
                         </div>
                       </div>
@@ -278,7 +309,7 @@ function class_list() {
                           </div>
                         </div>
                         <div className="items-link items-link2 f-right">
-                          <a href="job_details.html">Full Time</a>
+                        
                           <span>7 hours ago</span>
                         </div>
                       </div>
@@ -300,7 +331,7 @@ function class_list() {
                           </div>
                         </div>
                         <div className="items-link items-link2 f-right">
-                          <a href="job_details.html">Full Time</a>
+                      
                           <span>7 hours ago</span>
                         </div>
                       </div>
@@ -322,7 +353,7 @@ function class_list() {
                           </div>
                         </div>
                         <div className="items-link items-link2 f-right">
-                          <a href="job_details.html">Full Time</a>
+                          
                           <span>7 hours ago</span>
                         </div>
                       </div>
@@ -344,7 +375,7 @@ function class_list() {
                           </div>
                         </div>
                         <div className="items-link items-link2 f-right">
-                          <a href="job_details.html">Full Time</a>
+                         
                           <span>7 hours ago</span>
                         </div>
                       </div>

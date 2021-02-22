@@ -141,9 +141,6 @@ p {
     color: lightgrey
 }
 
-#progressbar .active {
-    color: #673AB7
-}
 
 #progressbar li {
     list-style-type: none;
@@ -214,4 +211,28 @@ p {
 .fit-image {
     width: 100%;
     object-fit: cover
+}
+
+.select{
+    color: #2C3E50;
+    background-color: #ECEFF1;
+}
+
+.progress-bar {
+    background-color: #69c004 !important;
+}
+#progressbar li.active:before, #progressbar li.active:after {
+    background:  #e64964 !important;
+}
+#progressbar .active {
+    color: #e64964 !important;
+}
+#heading {
+    color: #69c004 !important ;
+}
+.fs-title{
+    color: #69c004 !important ;
+}
+#msform .action-button{
+    background:  #e64964 !important;
 }

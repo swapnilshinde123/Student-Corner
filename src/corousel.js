@@ -11,7 +11,7 @@ function corousel() {
       <div class="section" id="carousel">
       
           <div >
-              <div class="col-md-12  col-lg-12 mr-auto ml-auto">
+              <div class="col-md-10  col-lg-10 mr-auto ml-auto">
 
                  
                   <div class=" card-raised card-carousel">

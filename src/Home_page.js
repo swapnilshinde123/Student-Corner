@@ -352,7 +352,7 @@ function Home() {
       <div class="section" id="carousel">
       
           <div >
-              <div class="col-md-11  col-lg-11 mr-auto ml-auto">
+              <div class="col-md-10  col-lg-10 mr-auto ml-auto">
 
                  
                   <div class=" card-raised card-carousel">

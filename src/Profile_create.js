@@ -122,7 +122,77 @@ function Profile_create() {
                       <div className="col-5">
                         <h2 className="steps">Step 2 - 4</h2>
                       </div>
-                    </div> <label className="fieldlabels">Class Name: *</label> <input type="text" name="Class_name" placeholder="Class Name" /> <label className="fieldlabels">Last Name: *</label> <input type="text" name="lname" placeholder="Last Name" /> <label className="fieldlabels">Contact No.: *</label> <input type="text" name="phno" placeholder="Contact No." /> <label className="fieldlabels">Alternate Contact No.: *</label> <input type="text" name="phno_2" placeholder="Alternate Contact No." />
+                    </div>
+                    <label className="fieldlabels">Activities Name: *</label>
+                    <select class="custom-select select mb-3">
+                      <option selected> Select Activities</option>
+                      <option value="">Sport</option>
+                      <option value="">Programing</option>
+                      <option value="">Technical</option>
+                      <option value="">Cenimatics</option>
+                      <option value="">Hospital</option>
+                      <option value="">Cooking</option>
+                      <option value="">Perfermance</option>
+                    </select  ><label className="fieldlabels">Class Name: *</label> <input type="text" name="Class_name" placeholder="Class Name" /> <label className="fieldlabels">Address: *</label> <input type="text" name="lname" placeholder="Address" />
+                    <label className="fieldlabels">Cities: *</label>
+                    <select class="custom-select select mb-3">
+                      <option selected> Select Cities</option>
+                      <option value="">Mumbai</option>
+                      <option value="">Hyberabad</option>
+                      <option value="">Pune</option>
+                      <option value="">Chennai</option>
+                      <option value="">Delhi</option>
+                      <option value="">kolkata</option>
+                      <option value="">Ahmednagar</option>
+                    </select  >
+                    <label className="fieldlabels">Location: *</label> <input type="text" name="lname" placeholder="Location" /><label className="fieldlabels">Class Fess: *</label> <input type="text" name="no" placeholder="Class Fess" />
+                    <label className="fieldlabels"> class Duration: *</label>
+                    <select class="custom-select select mb-3">
+                      <option selected> class Duration</option>
+                      <option value="">1 Months</option>
+                      <option value="">2 Months</option>
+                      <option value="">3 Months</option>
+                      <option value="">4 Months</option>
+                      <option value="">5 Months</option>
+                      <option value="">6 Months</option>
+                      <option value="">7 Months</option>
+                      <option value="">8 Months</option>
+                      <option value="">9 Months</option>
+                      <option value="">10 Months</option>
+                      <option value="">11 Months</option>
+                      <option value="">12 Months</option>
+                    </select  >
+                    
+                    <div class="row">
+                      <div class="col-sm-12 form-group">
+                        <div class="row">
+                          <div class="col-sm-12 form-group">
+
+                            <label className="fieldlabels"> Class Information:*</label>
+                            <textarea class="form-control" type="textarea" name="message" id="message" maxlength="6000" rows="2"></textarea>
+                          </div>
+                        </div>
+
+                        <label className="fieldlabels"> Class Description:*</label>
+                        <textarea class="form-control" type="textarea" name="message" id="message" maxlength="6000" rows="2"></textarea>
+                      </div>
+                    </div> <div class="row">
+                      <div class="col-sm-12 form-group">
+
+                        <label className="fieldlabels"> Required Knowledge, Skills, and Abilities: *</label>
+                        <textarea class="form-control" type="textarea" name="message" id="message" maxlength="6000" rows="5"></textarea>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12 form-group">
+
+                        <label className="fieldlabels">  Education + Experience:*</label>
+                        <textarea class="form-control" type="textarea" name="message" id="message" maxlength="6000" rows="5"></textarea>
+                      </div>
+                    </div>
+
+
+
                   </div> <input type="button" name="next" className="next action-button" defaultValue="Next" /> <input type="button" name="previous" className="previous action-button-previous" defaultValue="Previous" />
                 </fieldset>
                 <fieldset>
@@ -134,7 +204,10 @@ function Profile_create() {
                       <div className="col-5">
                         <h2 className="steps">Step 3 - 4</h2>
                       </div>
-                    </div> <label className="fieldlabels">Upload Your Photo:</label> <input type="file" name="pic" accept="image/*" /> <label className="fieldlabels">Upload Signature Photo:</label> <input type="file" name="pic" accept="image/*" />
+                    </div>
+                    <label className="fieldlabels">Upload Your Photo:</label>
+                    <input type="file" name="pic" accept="image/*" />
+
                   </div> <input type="button" name="next" className="next action-button" defaultValue="Submit" /> <input type="button" name="previous" className="previous action-button-previous" defaultValue="Previous" />
                 </fieldset>
                 <fieldset>
@@ -153,7 +226,7 @@ function Profile_create() {
                     </div> <br /><br />
                     <div className="row justify-content-center">
                       <div className="col-7 text-center">
-                        <h5 className="purple-text text-center">You Have Successfully Signed Up</h5>
+                        <h5 className="purple-text text-center">You Have Successfully Profile</h5>
                       </div>
                     </div>
                   </div>
