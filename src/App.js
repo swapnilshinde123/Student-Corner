@@ -6,6 +6,7 @@ import "./App.css"
 import Class_list from './class_list';
 import Class_profile from './Class_profile';
 import Profile_create from './Profile_create';
+import Dashboards from "./Dashboards"
 function App() {
   return (
     <div>
@@ -26,6 +27,10 @@ function App() {
        <Route exact path="/Profile_create">
          <Navbar/>
          <Profile_create/>
+       </Route>
+       <Route exact path="/Dashboards">
+     
+         <Dashboards/>
        </Route>
      </Switch>
    </Router>

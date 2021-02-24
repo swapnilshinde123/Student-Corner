@@ -10,11 +10,11 @@ function Navbar() {
     const history = useHistory();
     const [data, setData] = useState();
     const [user, setUser] = useState("");
+       
 
-
-    const handleChange_logout = () => {
-        localStorage.clear()
-        setUser("")
+    const handleChange_logout =()=>{
+  localStorage.clear()
+  setUser("")
     }
     const handleChange = (e) => {
         setData((prevState) => {
@@ -101,40 +101,40 @@ function Navbar() {
         }
 
     };
+    
 
-
-
+   
 
     return (
         <div >
             <nav className=" navbar navbar-expand-lg navbar-light bg-light">
                 {/* <a href="#" className="navbar-brand">learn <b>a skill</b></a> */}
-
-
-
-                <div class="logo1">
-                    <a><img style={{ width: "14vw" }} src={Logo} alt="" /></a>
-                </div>
-
+               
+               
+                          
+                            <div class="logo1">
+                                <a><img style={{width:"14vw"}} src={Logo}alt=""/></a>
+                            </div>  
+                        
                 <button type="button" className="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span className="navbar-toggler-icon" />
                 </button>
 
                 <div id="navbarCollapse" className="collapse navbar-collapse justify-content-start">
                     <div className="navbar-nav">
-
-
-                        <Link to="/">
+                        
+                           
+                           <Link to="/">
                             <li class="active "><a >Home</a></li>
-
-                        </Link>
-                        <Link to="/Profile_create">
+                           
+                           </Link>
+                           <Link to="/Profile_create">
                             <li class="active "><a >Profile_create</a></li>
-                        </Link>
-                        <Link to="/Dashboards">
+                           </Link>
+                           <Link to="/Dashboards">
                             <li class="active "><a >Dashboards</a></li>
-                        </Link>
-
+                           </Link>
+                      
                     </div>
 
                     <div className="navbar-nav ml-auto action-buttons ">
@@ -170,9 +170,9 @@ function Navbar() {
                                         <input type="submit" onChange={handleChange}
 
                                             value="Login" className="btn btn-primary btn-block" defaultValue="Login" />
-                                        <input type="submit" onChange={handleChange}
+                                            <input type="submit" onChange={handleChange}
 
-                                            value="Requreter Login" className="btn  btn-primary btn-block" defaultValue="Login" />
+value="Login2" className="btn btn-primary btn-block" defaultValue="Login" />
 
                                         <div className="text-center mt-2">
                                             <a href="#">Forgot Your password?</a>
@@ -194,13 +194,11 @@ function Navbar() {
                                         <div className="form-group">
                                             <input type="text" minlength="10"
                                                 maxlength="10" name="mobile" onChange={handleChange_signup} className="form-control" placeholder="mobile no" required="required" />
-                                                
                                         </div>
                                         <div className="form-group">
                                             <label className="form-check-label"><input type="checkbox" required="required" /> I accept the <a href="#">Terms &amp; Conditions</a></label>
                                         </div>
                                         <input type="submit" value="Register" className="btn btn-primary btn-block" defaultValue="Sign up" />
-                                        <input type="submit" value="Requreter Register" className="btn btn-primary btn-block" defaultValue="Sign up" />
                                     </form>
                                 </div>
                             </div>

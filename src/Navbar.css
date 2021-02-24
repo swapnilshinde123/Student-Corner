@@ -179,6 +179,14 @@
 	.navbar .input-group {
 		width: 100%;
 	}
+	.login_button {
+		margin-top: 10px;
+		margin-left:33px ;
+	}
+	.sign-up-btn{
+		margin-top: 10px;
+		margin-left:33px ;
+	}
 }
 .ms{
 	text-align: justify;
@@ -194,9 +202,38 @@ height: 50vh;
 }
  .btn{
 	border-radius: 20px;
+	
  }
  @media (max-width: 400px){
      img {
 		width: 20vw !important;
 	}
+	.login_button {
+		margin-top: 10px;
+		margin-left:33px ;
+	}
+	.sign-up-btn{
+		margin-top: 10px;
+		margin-left:33px ;
+	}
+}
+@media (max-width: 425px){
+	.login_button {
+		margin-top: 10px;
+		margin-left:33px ;
+	}
+	.sign-up-btn{
+		margin-top: 10px;
+		margin-left:33px ;
+	}
+
+}
+/* .btn-primary{
+	padding: 21px 4px !important;
+} */
+input[type=submit].btn-block {
+    width: 50%;
+	margin-top: 0px;
+	font-size: 10px;
+	font-weight: 900;
 }
