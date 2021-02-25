@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
-import Axios from "./axios";
+import Axios from "../axios";
 import "./Navbar.css";
 import { toast } from "react-toastify";
-import Logo from "./icon/logo.png"
+import Logo from "../icon/logo.png"
 toast.configure();
 function Navbar() {
 
@@ -128,12 +128,7 @@ function Navbar() {
                             <li class="active "><a >Home</a></li>
 
                         </Link>
-                        <Link to="/Profile_create">
-                            <li class="active "><a >Profile_create</a></li>
-                        </Link>
-                        <Link to="/Dashboards">
-                            <li class="active "><a >Dashboards</a></li>
-                        </Link>
+                       
 
                     </div>
 
@@ -149,8 +144,8 @@ function Navbar() {
                                     <form action="/examples/actions/confirmation.php" method="post" onSubmit={handleSubmit}>
                                         <p className="hint-text">Sign in with your social media account</p>
                                         <div className="form-group social-btn clearfix">
-                                            <a href="#" className="btn btn-secondary facebook-btn float-left"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a>
-                                            <a href="#" className="btn btn-secondary google-btn float-right"><i className="fa fa-google" /> Google</a>
+                                            <a href="#" className="btn btn-secondary facebook-btn float-left"><i class=" fab fa-facebook-f" aria-hidden="true"></i> Facebook</a>
+                                            <a href="#" className="btn btn-secondary google-btn float-right"><i className="fab fa-google" /> Google</a>
                                         </div>
                                         <div className="or-seperator"><b>or</b></div>
                                         <div className="form-group">
@@ -170,13 +165,12 @@ function Navbar() {
                                         <input type="submit" onChange={handleChange}
 
                                             value="Login" className="btn btn-primary btn-block" defaultValue="Login" />
-                                        <input type="submit" onChange={handleChange}
-
-                                            value="Requreter Login" className="btn  btn-primary btn-block" defaultValue="Login" />
-
-                                        <div className="text-center mt-2">
-                                            <a href="#">Forgot Your password?</a>
+                                       
+                                       <Link to="/Recruiter_Home_page">
+                                        <div className="text-center  mt-2">
+                                            <a  style={{fontSize:"16px",fontWeight:"900",color:"blue"}}href="#">Are you a Recruiter?</a>
                                         </div>
+                                        </Link>
                                     </form>
                                 </div>
                             </div>
@@ -200,7 +194,11 @@ function Navbar() {
                                             <label className="form-check-label"><input type="checkbox" required="required" /> I accept the <a href="#">Terms &amp; Conditions</a></label>
                                         </div>
                                         <input type="submit" value="Register" className="btn btn-primary btn-block" defaultValue="Sign up" />
-                                        <input type="submit" value="Requreter Register" className="btn btn-primary btn-block" defaultValue="Sign up" />
+                                        <Link to="/Recruiter_Home_page">
+                                        <div className="text-center  mt-2">
+                                            <a  style={{fontSize:"16px",fontWeight:"900",color:"blue"}}href="#">Are you a Recruiter?</a>
+                                        </div>
+                                        </Link>
                                     </form>
                                 </div>
                             </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import img2 from "./corousel_photo/img6.jpg"
+import img2 from "../corousel_photo/img6.jpg"
 function class_list() {
     return (
         <div>

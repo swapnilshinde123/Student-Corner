@@ -198,7 +198,7 @@ height: 50vh;
 	float: left;
 }
 .nn{
-	background-color: rgba(65, 62, 62, 0.3);
+	background-color: rgba(65, 62, 62, 0.4);
 }
  .btn{
 	border-radius: 20px;
@@ -231,9 +231,6 @@ height: 50vh;
 /* .btn-primary{
 	padding: 21px 4px !important;
 } */
-input[type=submit].btn-block {
-    width: 50%;
-	margin-top: 0px;
-	font-size: 10px;
-	font-weight: 900;
+.navbar .action-form a{
+	color: white !important;
 }

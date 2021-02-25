@@ -1,24 +1,24 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import Corousel from "./corousel"
-import Programing from "./icon/programing.png";
-import Hospital from "./icon/hospital.png";
-import Technical from "./icon/technical.png"
-import Sport from "./icon/sport.png"
-import Cenimatics from "./icon/cenimatics .png"
-import  Cooking from "./icon/cooking.png"
-import  Perfermance from "./icon/perfermance.png"
-import pp from "./corousel_photo/pp.jpg"
+import Programing from "../icon/programing.png";
+import Hospital from "../icon/hospital.png";
+import Technical from "../icon/technical.png"
+import Sport from "../icon/sport.png"
+import Cenimatics from "../icon/cenimatics .png"
+import  Cooking from "../icon/cooking.png"
+import  Perfermance from "../icon/perfermance.png"
+import pp from "../corousel_photo/pp.jpg"
 import "./Home_page.css"
 import $ from 'jquery';
 
-import Mumbai from "./City_icon/mumbai.png"
-import Pune from "./City_icon/Pune.png"
-import Kolkata from "./City_icon/kolkata.png"
-import Hyderabad from "./City_icon/hyderabad.png"
-import Delhi from "./City_icon/Delhi.png"
-import Chennai from "./City_icon/chennai.png"
-import Ahmednagar  from "./City_icon/Ahmednagar .png"
+import Mumbai from "../City_icon/mumbai.png"
+import Pune from "../City_icon/Pune.png"
+import Kolkata from "../City_icon/kolkata.png"
+import Hyderabad from "../City_icon/hyderabad.png"
+import Delhi from "../City_icon/Delhi.png"
+import Chennai from "../City_icon/chennai.png"
+import Ahmednagar  from "../City_icon/Ahmednagar .png"
 
 function Home() {
 

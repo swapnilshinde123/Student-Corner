@@ -13,7 +13,7 @@ function Dashboards() {
                             <div className="col-md-6 col-xl-3">
                               <div className="card widget-card-1 " style={{ boxShadow: "0 1px 11px 0 rgba(0, 0, 0, 0.12)"}}>
                                 <div className="card-block-small">
-                                  <i className="icofont icofont-pie-chart bg-c-blue card1-icon" />
+                                  <i className="fa fa-list bg-c-blue card1-icon" />
                                   <span className="text-c-blue f-w-600">All</span>
                                   <h4>49</h4>
                                   <div>
@@ -29,7 +29,7 @@ function Dashboards() {
                             <div className="col-md-6 col-xl-3">
                               <div className="card widget-card-1" style={{ boxShadow: "0 1px 11px 0 rgba(0, 0, 0, 0.12)"}}>
                                 <div className="card-block-small">
-                                  <i className="icofont icofont-ui-home bg-c-pink card1-icon" />
+                                  <i className="fa fa-window-close bg-c-pink card1-icon" />
                                   <span className="text-c-pink f-w-600">Reject</span>
                                   <h4>23</h4>
                                   <div>
@@ -45,8 +45,8 @@ function Dashboards() {
                             <div className="col-md-6 col-xl-3">
                               <div className="card widget-card-1" style={{ boxShadow: "0 1px 11px 0 rgba(0, 0, 0, 0.12)"}}>
                                 <div className="card-block-small">
-                                  <i className="icofont icofont-warning-alt bg-c-green card1-icon" />
-                                  <span className="text-c-green f-w-600">Accept</span>
+                                  <i className=" fa fa-check bg-c-green card1-icon" />
+                                  <span className=" text-c-green f-w-600">Accept</span>
                                   <h4>45</h4>
                                   <div>
                                     <span className="f-left m-t-10 text-muted">
@@ -61,7 +61,7 @@ function Dashboards() {
                             <div className="col-md-6 col-xl-3">
                               <div className="card widget-card-1" style={{ boxShadow: "0 1px 11px 0 rgba(0, 0, 0, 0.12)"}}>
                                 <div className="card-block-small">
-                                  <i className="icofont icofont-social-twitter bg-c-yellow card1-icon" />
+                                  <i className="fas fa-sync  bg-c-yellow card1-icon" />
                                   <span className="text-c-yellow f-w-600">Process</span>
                                   <h4>56</h4>
                                   <div>

@@ -1,20 +1,23 @@
 import React from 'react'
-import Navbar from "./Navbar"
+import Navbar from "./User/Navbar"
 import { BrowserRouter as Router,Switch,Route} from "react-router-dom";
-import Home_page from "./Home_page"
+import User_Home_page from "./User/Home_page"
 import "./App.css"
-import Class_list from './class_list';
-import Class_profile from './Class_profile';
-import Profile_create from './Profile_create';
-import Dashboards from "./Dashboards"
+import Class_list from './User/class_list';
+import Class_profile from './User/Class_profile';
+import Recruiter_Home_page from "./Recruiter/Recruiter_Home_page"
+import Profile_create from './Recruiter/Profile_create';
+import Recruiter_Dashboards from "./Recruiter/Dashboards";
+import Navbar2 from "./Recruiter/Navbar_2"
 function App() {
   return (
     <div>
    <Router>
      <Switch>
+            {/* User */}
        <Route exact path="/">
          <Navbar/>
-         <Home_page/>
+         <User_Home_page />
        </Route>
        <Route exact path="/class_list">
          <Navbar/>
@@ -24,14 +27,21 @@ function App() {
          <Navbar/>
          <Class_profile/>
        </Route>
+                {/* Recruiter */}
+       <Route exact path="/Recruiter_Home_page">
+          <Navbar2/>
+         <Recruiter_Home_page/>
+        
+       </Route>
        <Route exact path="/Profile_create">
-         <Navbar/>
+         <Navbar2/>
          <Profile_create/>
        </Route>
        <Route exact path="/Dashboards">
-     
-         <Dashboards/>
+         <Navbar2/>
+         <Recruiter_Dashboards/>
        </Route>
+       
      </Switch>
    </Router>
    

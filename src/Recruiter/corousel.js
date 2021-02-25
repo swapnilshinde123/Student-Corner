@@ -1,6 +1,6 @@
 import React from 'react'
 import "./corousel.css";
-import nn from "./corousel_photo/nn.jpg"
+import nn from "../corousel_photo/nn.jpg"
 
 
 function corousel() {

@@ -1,5 +1,5 @@
 import React from 'react'
-import img2 from "./corousel_photo/img5.png"
+import img2 from "../corousel_photo/img5.png"
 function Class_profile() {
     return (
         <div>
