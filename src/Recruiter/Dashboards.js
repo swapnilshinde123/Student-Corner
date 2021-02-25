@@ -99,7 +99,7 @@ function Dashboards() {
                                           </td>
                                           <td>
                                           <input type="submit" value="Reject" className="btn re btn-primary btn-block" style={{width:"30%",marginRight:"12px" ,fontSize:"15px",backgroundColor:"rgb(241 101 134)",borderRadius:"12px"}} defaultValue="" />
-                                          <input type="submit" value="Accpet" className="btn re btn-primary btn-block" style={{width:"30%",marginRight:"12px" ,fontSize:"15px",backgroundColor:"#8eb553",borderRadius:"12px"}} defaultValue="" />
+                                          <input type="submit" value="Accpet" className="btn re btn-primary btn-block" style={{width:"30%",marginRight:"12px" ,fontSize:"15px",backgroundColor:"#8eb553",borderRadius:"12px",margin:"0px"}} defaultValue="" />
                                           </td>
                                         </tr>
                                         <tr>
@@ -111,7 +111,7 @@ function Dashboards() {
                                           </td>
                                           <td>
                                           <input type="submit" value="Reject" className="btn re btn-primary btn-block" style={{width:"30%",marginRight:"12px" ,fontSize:"15px",backgroundColor:"rgb(241 101 134)",borderRadius:"12px"}} defaultValue="" />
-                                          <input type="submit" value="Accpet" className="btn re btn-primary btn-block" style={{width:"30%",marginRight:"12px" ,fontSize:"15px",backgroundColor:"#8eb553",borderRadius:"12px"}} defaultValue="" />
+                                          <input type="submit" value="Accpet" className="btn re btn-primary btn-block" style={{width:"30%",marginRight:"12px" ,fontSize:"15px",backgroundColor:"#8eb553",borderRadius:"12px",margin:"0px"}} defaultValue="" />
                                           </td>
                                         </tr>
                                         <tr>
@@ -123,7 +123,7 @@ function Dashboards() {
                                           </td>
                                           <td>
                                           <input type="submit" value="Reject" className="btn re btn-primary btn-block" style={{width:"30%",marginRight:"12px" ,fontSize:"15px",backgroundColor:"rgb(241 101 134)",borderRadius:"12px"}} defaultValue="" />
-                                          <input type="submit" value="Accpet" className="btn re btn-primary btn-block" style={{width:"30%",marginRight:"12px" ,fontSize:"15px",backgroundColor:"#8eb553",borderRadius:"12px"}} defaultValue="" />
+                                          <input type="submit" value="Accpet" className="btn re btn-primary btn-block" style={{width:"30%",marginRight:"12px" ,fontSize:"15px",backgroundColor:"#8eb553",borderRadius:"12px",margin:"0px"}} defaultValue="" />
                                           </td>
                                         </tr>
                                         <tr>
@@ -135,7 +135,7 @@ function Dashboards() {
                                           </td>
                                           <td>
                                           <input type="submit" value="Reject" className="btn re btn-primary btn-block" style={{width:"30%",marginRight:"12px" ,fontSize:"15px",backgroundColor:"rgb(241 101 134)",borderRadius:"12px"}} defaultValue="" />
-                                          <input type="submit" value="Accpet" className="btn re btn-primary btn-block" style={{width:"30%",marginRight:"12px" ,fontSize:"15px",backgroundColor:"#8eb553",borderRadius:"12px"}} defaultValue="" />
+                                          <input type="submit" value="Accpet" className="btn re btn-primary btn-block" style={{width:"30%",marginRight:"12px" ,fontSize:"15px",backgroundColor:"#8eb553",borderRadius:"12px",margin:"0px"}} defaultValue="" />
                                           </td>
                                         </tr>
                                         <tr>

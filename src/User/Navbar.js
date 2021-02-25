@@ -128,6 +128,9 @@ function Navbar() {
                             <li class="active "><a >Home</a></li>
 
                         </Link>
+                        <Link to="/Dashboards">
+                            <li class="active "><a > Dashboards</a></li>
+                           </Link>
                        
 
                     </div>
