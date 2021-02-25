@@ -85,19 +85,7 @@ function Class_profile() {
                         <li>Strong problem solving and debugging skills</li>
                       </ul>
                     </div>
-                    <div className="post-details2  mb-50">
-                      {/* Small Section Tittle */}
-                      <div className="small-section-tittle">
-                        <h4>Education + Experience</h4>
-                      </div>
-                      <ul>
-                        <li>3 or more years of professional design experience</li>
-                        <li>Direct response email experience</li>
-                        <li>Ecommerce website design experience</li>
-                        <li>Familiarity with mobile and web apps preferred</li>
-                        <li>Experience using Invision a plus</li>
-                      </ul>
-                    </div>
+                   
                   </div>
                 </div>
                 {/* Right Content */}

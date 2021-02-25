@@ -110,7 +110,7 @@ function Profile_create() {
                       <div className="col-5">
                         <h2 className="steps">Step 1 - 4</h2>
                       </div>
-                    </div> <label className="fieldlabels">First Name: *</label> <input type="text" name="fname" placeholder="First Name" /> <label className="fieldlabels">Last Name: *</label> <input type="text" name="lname" placeholder="Last Name" /> <label className="fieldlabels">Contact No.: *</label> <input type="text" name="phno" placeholder="Contact No." /> <label className="fieldlabels">Alternate Contact No.: *</label> <input type="text" name="phno_2" placeholder="Alternate Contact No." />
+                    </div> <label className="fieldlabels">First Name: *</label> <input type="text" name="fname" placeholder="First Name" /> <label className="fieldlabels">Last Name: *</label> <input type="text" name="lname" placeholder="Last Name" /> 
                   </div> <input type="button" name="next" className="next action-button" defaultValue="Next" />
                 </fieldset>
                 <fieldset>
@@ -133,7 +133,30 @@ function Profile_create() {
                       <option value="">Hospital</option>
                       <option value="">Cooking</option>
                       <option value="">Perfermance</option>
-                    </select  ><label className="fieldlabels">Class Name: *</label> <input type="text" name="Class_name" placeholder="Class Name" /> <label className="fieldlabels">Address: *</label> <input type="text" name="lname" placeholder="Address" />
+                    </select  >
+                    <label className="fieldlabels">Class Category: *</label>
+                    <select class="custom-select select mb-3">
+                      <option selected> Select Category </option>
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      
+                    </select  >
+                    <label className="fieldlabels"> Vacancy: *</label>
+                    <select class="custom-select select mb-3">
+                      <option selected> No of Vacancy </option>
+                      <option value="">1 </option>
+                      <option value="">2 </option>
+                      <option value="">3 </option>
+                      <option value="">4 </option>
+                      <option value="">5 </option>
+                      <option value="">6 </option>
+                      <option value="">7 </option>
+                      <option value="">8 </option>
+                      <option value="">9 </option>
+                      <option value="">10 </option>
+                      
+                    </select  >
+                    <label className="fieldlabels">Class Name: *</label> <input type="text" name="Class_name" placeholder="Class Name" /> <label className="fieldlabels">Address: *</label> <input type="text" name="lname" placeholder="Address" />
                     <label className="fieldlabels">Cities: *</label>
                     <select class="custom-select select mb-3">
                       <option selected> Select Cities</option>
@@ -145,7 +168,14 @@ function Profile_create() {
                       <option value="">kolkata</option>
                       <option value="">Ahmednagar</option>
                     </select  >
-                    <label className="fieldlabels">Location: *</label> <input type="text" name="lname" placeholder="Location" /><label className="fieldlabels">Class Fess: *</label> <input type="text" name="no" placeholder="Class Fess" />
+                    <label className="fieldlabels">Class Type: *</label>
+                    <select class="custom-select select mb-3">
+                      <option selected> Select Type</option>
+                      <option value="">Full Time</option>
+                      <option value="">Part Time</option>
+                      <option value="">Remote</option>
+                    </select  >
+                    <label className="fieldlabels">Class Fess: *</label> <input type="no" name="no" placeholder="Class Fess" />
                     <label className="fieldlabels"> class Duration: *</label>
                     <select class="custom-select select mb-3">
                       <option selected> class Duration</option>
@@ -183,15 +213,7 @@ function Profile_create() {
                         <textarea class="form-control" type="textarea" name="message" id="message" maxlength="6000" rows="5"></textarea>
                       </div>
                     </div>
-                    <div class="row">
-                      <div class="col-sm-12 form-group">
-
-                        <label className="fieldlabels">  Education + Experience:*</label>
-                        <textarea class="form-control" type="textarea" name="message" id="message" maxlength="6000" rows="5"></textarea>
-                      </div>
-                    </div>
-
-
+                   
 
                   </div> <input type="button" name="next" className="next action-button" defaultValue="Next" /> <input type="button" name="previous" className="previous action-button-previous" defaultValue="Previous" />
                 </fieldset>

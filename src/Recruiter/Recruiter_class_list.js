@@ -89,10 +89,7 @@ function class_list() {
                           <input type="checkbox" />
                           <span className="checkmark" />
                         </label>
-                        <label className="container">Freelance
-                          <input type="checkbox" />
-                          <span className="checkmark" />
-                        </label>
+                       
                       </div>
                       {/* select-Categories End */}
                     </div>
@@ -111,32 +108,10 @@ function class_list() {
                     </select>
                       </div>
                       {/*  Select job items End*/}
-                      {/* select-Categories start */}
-                      <div className="select-Categories pt-80 pb-50">
-                        <div className="small-section-tittle2">
-                          <h4>Experience</h4>
-                        </div>
-                        <label className="container">1-2 Years
-                          <input type="checkbox" />
-                          <span className="checkmark" />
-                        </label>
-                        <label className="container">2-3 Years
-                          <input type="checkbox" defaultChecked="checked active" />
-                          <span className="checkmark" />
-                        </label>
-                        <label className="container">3-6 Years
-                          <input type="checkbox" />
-                          <span className="checkmark" />
-                        </label>
-                        <label className="container">6-more..
-                          <input type="checkbox" />
-                          <span className="checkmark" />
-                        </label>
-                      </div>
-                      {/* select-Categories End */}
+                      
                     </div>
                     {/* single three */}
-                    <div className="single-listing">
+                    <div className="single-listing mt-5">
                       {/* select-Categories start */}
                       <div className="select-Categories pb-50">
                         <div className="small-section-tittle2">
@@ -169,31 +144,7 @@ function class_list() {
                       </div>
                       {/* select-Categories End */}
                     </div>
-                    <div className="single-listing">
-                      {/* Range Slider Start */}
-                      <aside className="left_widgets p_filter_widgets price_rangs_aside sidebar_box_shadow">
-                        <div className="small-section-tittle2">
-                          <h4>Filter Class</h4>
-                        </div>
-                        <div className="widgets_inner">
-                          <div className="range_item">
-                            {/* <div id="slider-range"></div> */}
-                            <input type="text" className="js-range-slider" defaultValue />
-                            <div className="d-flex align-items-center">
-                              <div className="price_text">
-                                <p>Price :</p>
-                              </div>
-                              <div className="price_value d-flex justify-content-center">
-                                <input type="text" className="js-input-from" id="amount" readOnly />
-                                <span>to</span>
-                                <input type="text" className="js-input-to" id="amount" readOnly />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </aside>
-                      {/* Range Slider End */}
-                    </div>
+                  
                   </div>
                   {/* Job Category Listing End */}
                 </div>

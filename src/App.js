@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from "./User/Navbar"
 import { BrowserRouter as Router,Switch,Route} from "react-router-dom";
-import User_Home_page from "./User/Home_page"
+import User_Home_page from "./User/User_Home_page"
 import "./App.css"
 import User_Dashboards from "./User/User_Dashboards";
 import Class_list from './User/class_list';
@@ -19,6 +19,11 @@ function App() {
      <Switch>
             {/* User */}
        <Route exact path="/">
+         <Navbar/>
+         <User_Home_page />
+       </Route>
+
+        <Route exact path="/User_Home_page">
          <Navbar/>
          <User_Home_page />
        </Route>
