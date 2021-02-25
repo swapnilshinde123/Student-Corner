@@ -124,7 +124,7 @@ function Navbar() {
                     <div className="navbar-nav">
 
 
-                        <Link to="/">
+                        <Link to="/ ">
                             <li class="active "><a >Home</a></li>
 
                         </Link>

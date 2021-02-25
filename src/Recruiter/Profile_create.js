@@ -208,7 +208,7 @@ function Profile_create() {
                     <label className="fieldlabels">Upload Your Photo:</label>
                     <input type="file" name="pic" accept="image/*" />
 
-                  </div> <input type="button" name="next" className="next action-button" defaultValue="Submit" /> <input type="button" name="previous" className="previous action-button-previous" defaultValue="Previous" />
+                  </div>  <input type="button" name="next" className="next action-button" defaultValue="Submit" /> <input type="button" name="previous" className="previous action-button-previous" defaultValue="Previous" />
                 </fieldset>
                 <fieldset>
                   <div className="form-card">

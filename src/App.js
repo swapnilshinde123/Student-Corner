@@ -8,6 +8,8 @@ import Class_list from './User/class_list';
 import Class_profile from './User/Class_profile';
 import Recruiter_Home_page from "./Recruiter/Recruiter_Home_page"
 import Profile_create from './Recruiter/Profile_create';
+import Recruiter_Class_list from './Recruiter/Recruiter_class_list';
+import Recruiter_Class_profile from './Recruiter/Recruiter_Class_profile';
 import Recruiter_Dashboards from "./Recruiter/Recruiter_Dashboards";
 import Navbar2 from "./Recruiter/Navbar_2"
 function App() {
@@ -46,7 +48,14 @@ function App() {
          <Navbar2/>
          <Recruiter_Dashboards/>
        </Route>
-       
+       <Route exact path="/Recruiter_class_list">
+         <Navbar2/>
+         <Recruiter_Class_list/>
+       </Route>
+       <Route exact path="/Recruiter_Class_profile">
+         <Navbar2/>
+         <Recruiter_Class_profile/>
+       </Route>
      </Switch>
    </Router>
    

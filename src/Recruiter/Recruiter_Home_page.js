@@ -258,7 +258,7 @@ function Home() {
               <div className="services-ion">
               <img src={Programing}/>
               </div>
-              <Link to="/class_list">
+              <Link to="/Recruiter_class_list">
               <div className="services-cap">
                 <h5><a href="job_listing.html">Programing</a></h5>
                 <span>(653)</span>
