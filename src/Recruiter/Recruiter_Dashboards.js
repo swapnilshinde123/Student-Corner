@@ -1,5 +1,5 @@
 import React from 'react'
- import "./Dashboards.css"
+ import "./Recruiter_Dashboards.css"
 function Dashboards() {
     return (
         <div>

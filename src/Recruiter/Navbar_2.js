@@ -10,11 +10,11 @@ function Navbar() {
     const history = useHistory();
     const [data, setData] = useState();
     const [user, setUser] = useState("");
-       
 
-    const handleChange_logout =()=>{
-  localStorage.clear()
-  setUser("")
+
+    const handleChange_logout = () => {
+        localStorage.clear()
+        setUser("")
     }
     const handleChange = (e) => {
         setData((prevState) => {
@@ -101,40 +101,40 @@ function Navbar() {
         }
 
     };
-    
 
-   
+
+
 
     return (
         <div >
             <nav className=" navbar navbar-expand-lg navbar-light bg-light">
                 {/* <a href="#" className="navbar-brand">learn <b>a skill</b></a> */}
-               
-               
-                          
-                            <div class="logo1">
-                                <a><img style={{width:"14vw"}} src={Logo}alt=""/></a>
-                            </div>  
-                        
+
+
+
+                <div class="logo1">
+                    <a><img style={{ width: "14vw" }} src={Logo} alt="" /></a>
+                </div>
+
                 <button type="button" className="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span className="navbar-toggler-icon" />
                 </button>
 
                 <div id="navbarCollapse" className="collapse navbar-collapse justify-content-start">
                     <div className="navbar-nav">
-                        
-                           
-                           <Link to="/Recruiter_Home_page">
+
+
+                        <Link to="/Recruiter_Home_page">
                             <li class="active "><a >Home</a></li>
-                           
-                           </Link>
-                           <Link to="/Profile_create">
+
+                        </Link>
+                        <Link to="/Profile_create">
                             <li class="active "><a >Profile_create</a></li>
-                           </Link>
-                           <Link to="/Dashboards">
+                        </Link>
+                        <Link to="/Recruiter_Dashboards">
                             <li class="active "><a >Recruiter Dashboards</a></li>
-                           </Link>
-                      
+                        </Link>
+
                     </div>
 
                     <div className="navbar-nav ml-auto action-buttons ">
@@ -170,7 +170,7 @@ function Navbar() {
                                         <input type="submit" onChange={handleChange}
 
                                             value="Login" className="btn btn-primary btn-block" defaultValue="Login" />
-                                            
+
                                     </form>
                                 </div>
                             </div>
