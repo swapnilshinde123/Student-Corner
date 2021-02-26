@@ -107,7 +107,7 @@ function Navbar() {
 
     return (
         <div >
-            <nav className=" navbar navbar-expand-lg navbar-light bg-light">
+            <nav className=" navbar navbar-expand-lg navbar-light bg-light fixed-top">
                 {/* <a href="#" className="navbar-brand">learn <b>a skill</b></a> */}
 
 
@@ -132,7 +132,6 @@ function Navbar() {
                             <li class="active "><a > Dashboards</a></li>
                            </Link>
                        
-
                     </div>
 
                     <div className="navbar-nav ml-auto action-buttons ">
@@ -146,6 +145,7 @@ function Navbar() {
                                 <div className="dropdown-menu action-form mt-3 nn" id="spn3">
                                     <form action="/examples/actions/confirmation.php" method="post" onSubmit={handleSubmit}>
                                         <p className="hint-text">Sign in with your social media account</p>
+                                        
                                         <div className="form-group social-btn clearfix">
                                             <a href="#" className="btn btn-secondary facebook-btn float-left"><i class=" fab fa-facebook-f" aria-hidden="true"></i> Facebook</a>
                                             <a href="#" className="btn btn-secondary google-btn float-right"><i className="fab fa-google" /> Google</a>
@@ -174,7 +174,10 @@ function Navbar() {
                                             <a  style={{fontSize:"16px",fontWeight:"900",color:"blue"}}href="#">Are you a Recruiter?</a>
                                         </div>
                                         </Link>
+
+                                        
                                     </form>
+                                    
                                 </div>
                             </div>
                             <div className="nav-item dropdown">

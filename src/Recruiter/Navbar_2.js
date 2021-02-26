@@ -107,7 +107,7 @@ function Navbar() {
 
     return (
         <div >
-            <nav className=" navbar navbar-expand-lg navbar-light bg-light">
+            <nav className=" navbar navbar-expand-lg navbar-light bg-light fixed-top">
                 {/* <a href="#" className="navbar-brand">learn <b>a skill</b></a> */}
 
 

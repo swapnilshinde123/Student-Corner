@@ -3,6 +3,8 @@ import Navbar from "./User/Navbar"
 import { BrowserRouter as Router,Switch,Route} from "react-router-dom";
 import User_Home_page from "./User/User_Home_page"
 import "./App.css"
+import Job from "./User/Job";
+import Create_job_profile from "./User/Create_job_profile "
 import User_Dashboards from "./User/User_Dashboards";
 import Class_list from './User/class_list';
 import Class_profile from './User/Class_profile';
@@ -38,6 +40,14 @@ function App() {
        <Route exact path="/User_Dashboards">
          <Navbar/>
          <User_Dashboards/>
+       </Route>
+       <Route exact path="/Job">
+         <Navbar/>
+         <Job/>
+       </Route>
+       <Route exact path="/Create_job_profile">
+         <Navbar/>
+        <Create_job_profile/>
        </Route>
                 {/* Recruiter */}
        <Route exact path="/Recruiter_Home_page">

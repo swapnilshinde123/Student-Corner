@@ -3,7 +3,7 @@ import "./user_Dashboards.css"
 function Dashboards() {
   return (
     <div>
-      <div className="pcoded-content">
+      <div className="pcoded-content mt-100">
         <div className="pcoded-inner-content">
           <div className="main-body">
             <div className="page-wrapper">
@@ -91,7 +91,7 @@ function Dashboards() {
                             <tbody>
                               <tr>
                                 <td>
-                                  <div className="single-job-items ">
+                                  <div className="single-job-items " style={{width:"85vw"}}>
                                     <div className="job-items">
                                       <div className="company-img">
                                         <a href="#"><img src="assets/img/icon/job-list3.png" alt="" /></a>
@@ -113,7 +113,7 @@ function Dashboards() {
                               </tr>
                               <tr>
                                 <td>
-                                  <div className="single-job-items ">
+                                  <div className="single-job-items  " style={{width:"85vw"}}>
                                     <div className="job-items">
                                       <div className="company-img">
                                         <a href="#"><img src="assets/img/icon/job-list3.png" alt="" /></a>
@@ -135,7 +135,7 @@ function Dashboards() {
                               </tr>
                               <tr>
                                 <td>
-                                  <div className="single-job-items ">
+                                  <div className="single-job-items "style={{width:"85vw"}}>
                                     <div className="job-items">
                                       <div className="company-img">
                                         <a href="#"><img src="assets/img/icon/job-list3.png" alt="" /></a>
