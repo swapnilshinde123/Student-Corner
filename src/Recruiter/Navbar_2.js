@@ -131,8 +131,14 @@ function Navbar() {
                         <Link to="/Profile_create">
                             <li class="active "><a >Profile_create</a></li>
                         </Link>
+                        <Link to="/Job_Profile_create">
+                            <li class="active "><a >Job_Profile_create</a></li>
+                        </Link>
                         <Link to="/Recruiter_Dashboards">
                             <li class="active "><a >Recruiter Dashboards</a></li>
+                        </Link>
+                        <Link to="/Job_Dashboards">
+                            <li class="active "><a >Job Dashboards</a></li>
                         </Link>
 
                     </div>
@@ -158,7 +164,7 @@ function Navbar() {
                                                 class="form-control"
 
                                                 onChange={handleChange}
-                                                name="email" placeholder="Username" required="required" />
+                                                name="email" placeholder="Email" required="required" />
                                         </div>
                                         <div className="form-group">
                                             <input type="password" className="form-control" type="password"

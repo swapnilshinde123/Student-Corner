@@ -132,7 +132,7 @@ function Job() {
                 <ul className="cat-list ">
                   <li><a >Recent</a></li>
                   <li><a >Full Time</a></li>
-                  <li><a >Intern</a></li>
+                  <li><a >Remote</a></li>
                   <li><a >part Time</a></li>
                 </ul>
                 <div className="single-post d-flex flex-row">

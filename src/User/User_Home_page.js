@@ -416,7 +416,7 @@ function Home() {
               </div>
              <Link to ="/Create_job_profile">
              <div className="process-cap">
-                <h5  className="mt-5">3. Create job profile  </h5>
+                <h5  className="mt-5">3. Upload Resume </h5>
                 {/* <p>Sorem spsum dolor sit amsectetur adipisclit, seddo eiusmod tempor incididunt ut laborea.</p> */}
               </div>
              </Link>

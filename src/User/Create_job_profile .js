@@ -93,10 +93,9 @@ function Create_job_profile() {
                             <p>Fill all form field to go to next step</p>
                             <form id="msform">
                                 {/* progressbar */}
-                                <ul id="progressbar">
-                                    <li className="active" id="personal"><strong>Personal</strong></li>
-                                    <li id="personal"><strong> Personal Information</strong></li>
-                                    <li id="payment"><strong>Image</strong></li>
+                                <ul id="progressbar" className="progressbar">
+                                    <li className="active"  id="personal"><strong>Personal Information </strong></li>
+                                    <li id="payment"><strong>Upload Resume</strong></li>
                                     <li id="confirm"><strong>Finish</strong></li>
                                 </ul>
                                 <div className="progress">
@@ -109,127 +108,23 @@ function Create_job_profile() {
                                                 <h2 className="fs-title"> Personal Information:</h2>
                                             </div>
                                             <div className="col-5">
-                                                <h2 className="steps">Step 1 - 4</h2>
+                                                <h2 className="steps">Step 1 - 3</h2>
                                             </div>
                                         </div> <label className="fieldlabels">First Name: *</label> <input type="text" name="fname" placeholder="First Name" /> <label className="fieldlabels">Last Name: *</label> <input type="text" name="lname" placeholder="Last Name" />
                                     </div> <input type="button" name="next" className="next action-button" defaultValue="Next" />
                                 </fieldset>
+                       
                                 <fieldset>
                                     <div className="form-card">
                                         <div className="row">
                                             <div className="col-7">
-                                                <h2 className="fs-title">Class Information:</h2>
+                                                <h2 className="fs-title">Resume Upload:</h2>
                                             </div>
                                             <div className="col-5">
-                                                <h2 className="steps">Step 2 - 4</h2>
+                                                <h2 className="steps">Step 2 - 3</h2>
                                             </div>
                                         </div>
-                                        <label className="fieldlabels">Activities Name: *</label>
-                                        <select class="custom-select select mb-3">
-                                            <option selected> Select Activities</option>
-                                            <option value="" >Sport</option>
-                                            <option value="">Programing</option>
-                                            <option value="">Technical</option>
-                                            <option value="">Cenimatics</option>
-                                            <option value="">Hospital</option>
-                                            <option value="">Cooking</option>
-                                            <option value="">Perfermance</option>
-                                        </select  >
-                                        <label className="fieldlabels">Class Category: *</label>
-                                        <select class="custom-select select mb-3">
-                                            <option selected> Select Category </option>
-                                            <option value="">1</option>
-                                            <option value="">2</option>
-                                        </select  >
-                                        <label className="fieldlabels"> Vacancy: *</label>
-                                        <select class="custom-select select mb-3">
-                                            <option selected> Select</option>
-                                            <option value="">1 </option>
-                                            <option value="">2 </option>
-                                            <option value="">3 </option>
-                                            <option value="">4 </option>
-                                            <option value="">5 </option>
-                                            <option value="">6 </option>
-                                            <option value="">7 </option>
-                                            <option value="">8 </option>
-                                            <option value="">9 </option>
-                                            <option value="">10 </option>
-
-                                        </select  >
-                                        <label className="fieldlabels">Class Name: *</label> <input type="text" name="Class_name" placeholder="Class Name" /> <label className="fieldlabels">Address: *</label> <input type="text" name="lname" placeholder="Address" />
-                                        <label className="fieldlabels">Cities: *</label>
-                                        <select class="custom-select select mb-3">
-                                            <option selected> Select Cities</option>
-                                            <option value="">Mumbai</option>
-                                            <option value="">Hyberabad</option>
-                                            <option value="">Pune</option>
-                                            <option value="">Chennai</option>
-                                            <option value="">Delhi</option>
-                                            <option value="">kolkata</option>
-                                            <option value="">Ahmednagar</option>
-                                        </select  >
-                                        <label className="fieldlabels">Class Type: *</label>
-                                        <select class="custom-select select mb-3">
-                                            <option selected> Select Type</option>
-                                            <option value="">Full Time</option>
-                                            <option value="">Part Time</option>
-                                            <option value="">Remote</option>
-                                        </select  >
-                                        <label className="fieldlabels">Class Fess: *</label> <input type="no" name="no" placeholder="Class Fess" />
-                                        <label className="fieldlabels"> class Duration: *</label>
-                                        <select class="custom-select select mb-3">
-                                            <option selected> class Duration</option>
-                                            <option value="">1 Months</option>
-                                            <option value="">2 Months</option>
-                                            <option value="">3 Months</option>
-                                            <option value="">4 Months</option>
-                                            <option value="">5 Months</option>
-                                            <option value="">6 Months</option>
-                                            <option value="">7 Months</option>
-                                            <option value="">8 Months</option>
-                                            <option value="">9 Months</option>
-                                            <option value="">10 Months</option>
-                                            <option value="">11 Months</option>
-                                            <option value="">12 Months</option>
-                                        </select  >
-
-
-
-                                        <div class="row">
-                                            <div class="col-sm-12 form-group">
-                                                <div class="row">
-                                                    <div class="col-sm-12 form-group">
-
-                                                        <label className="fieldlabels"> Class Information:*</label>
-                                                        <textarea class="form-control" type="textarea" name="message" id="message" maxlength="6000" rows="2"></textarea>
-                                                    </div>
-                                                </div>
-
-                                                <label className="fieldlabels"> Class Description:*</label>
-                                                <textarea class="form-control" type="textarea" name="message" id="message" maxlength="6000" rows="2"></textarea>
-                                            </div>
-                                        </div> <div class="row">
-                                            <div class="col-sm-12 form-group">
-
-                                                <label className="fieldlabels"> Required Knowledge, Skills, and Abilities: *</label>
-                                                <textarea class="form-control" type="textarea" name="message" id="message" maxlength="6000" rows="5"></textarea>
-                                            </div>
-                                        </div>
-
-
-                                    </div> <input type="button" name="next" className="next action-button" defaultValue="Next" /> <input type="button" name="previous" className="previous action-button-previous" defaultValue="Previous" />
-                                </fieldset>
-                                <fieldset>
-                                    <div className="form-card">
-                                        <div className="row">
-                                            <div className="col-7">
-                                                <h2 className="fs-title">Image Upload:</h2>
-                                            </div>
-                                            <div className="col-5">
-                                                <h2 className="steps">Step 3 - 4</h2>
-                                            </div>
-                                        </div>
-                                        <label className="fieldlabels">Upload Your Photo:</label>
+                                        <label className="fieldlabels">Upload Your Resume:</label>
                                         <input type="file" name="pic" accept="image/*" />
 
                                     </div>  <input type="button" name="next" className="next action-button" defaultValue="Submit" /> <input type="button" name="previous" className="previous action-button-previous" defaultValue="Previous" />
@@ -241,7 +136,7 @@ function Create_job_profile() {
                                                 <h2 className="fs-title">Finish:</h2>
                                             </div>
                                             <div className="col-5">
-                                                <h2 className="steps">Step 4 - 4</h2>
+                                                <h2 className="steps">Step 3 - 3</h2>
                                             </div>
                                         </div> <br /><br />
                                         <h2 className="purple-text text-center"><strong>SUCCESS !</strong></h2> <br />
@@ -250,7 +145,7 @@ function Create_job_profile() {
                                         </div> <br /><br />
                                         <div className="row justify-content-center">
                                             <div className="col-7 text-center">
-                                                <h5 className="purple-text text-center">You Have Successfully Profile</h5>
+                                                <h5 className="purple-text text-center">You Have Successfully Upload Your Resume </h5>
                                             </div>
                                         </div>
                                     </div>

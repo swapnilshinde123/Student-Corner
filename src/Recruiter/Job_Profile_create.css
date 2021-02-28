@@ -150,9 +150,7 @@ p {
     position: relative;
     font-weight: 400
 }
-.progressbar li{
-    width: 33% !important;
-}
+
 #progressbar #account:before {
     font-family: FontAwesome;
     content: "\f13e"

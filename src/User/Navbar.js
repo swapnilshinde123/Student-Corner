@@ -156,7 +156,7 @@ function Navbar() {
                                                 class="form-control"
 
                                                 onChange={handleChange}
-                                                name="email" placeholder="Username" required="required" />
+                                                name="email" placeholder="Email" required="required" />
                                         </div>
                                         <div className="form-group">
                                             <input type="password" className="form-control" type="password"

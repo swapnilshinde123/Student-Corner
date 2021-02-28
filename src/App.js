@@ -10,10 +10,12 @@ import Class_list from './User/class_list';
 import Class_profile from './User/Class_profile';
 import Recruiter_Home_page from "./Recruiter/Recruiter_Home_page"
 import Profile_create from './Recruiter/Profile_create';
+import Job_Profile_create from './Recruiter/Job_Profile_create';
 import Recruiter_Class_list from './Recruiter/Recruiter_class_list';
 import Recruiter_Class_profile from './Recruiter/Recruiter_Class_profile';
 import Recruiter_Dashboards from "./Recruiter/Recruiter_Dashboards";
 import Navbar2 from "./Recruiter/Navbar_2"
+import Job_Dashboards from "./Recruiter/Job_Dashboards"
 function App() {
   return (
     <div>
@@ -59,6 +61,10 @@ function App() {
          <Navbar2/>
          <Profile_create/>
        </Route>
+       <Route exact path="/Job_Profile_create">
+         <Navbar2/>
+         <Job_Profile_create/>
+       </Route>
        <Route exact path="/Recruiter_Dashboards">
          <Navbar2/>
          <Recruiter_Dashboards/>
@@ -70,6 +76,11 @@ function App() {
        <Route exact path="/Recruiter_Class_profile">
          <Navbar2/>
          <Recruiter_Class_profile/>
+       </Route>
+       
+       <Route exact path="/Job_Dashboards">
+         <Navbar2/>
+         <Job_Dashboards/>
        </Route>
      </Switch>
    </Router>
