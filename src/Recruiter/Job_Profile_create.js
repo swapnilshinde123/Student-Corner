@@ -171,7 +171,7 @@ function Job_Profile_create() {
                       <option value="">Remote</option>
 
                     </select  >
-                    <label className="fieldlabels">Class Fess: *</label> <input type="no" name="no" placeholder="Class Fess" />
+                    <label className="fieldlabels">Salary: *</label> <input type="no" name="no" placeholder="Salary" />
 
                     <div class="row">
                       <div class="col-sm-12 form-group">

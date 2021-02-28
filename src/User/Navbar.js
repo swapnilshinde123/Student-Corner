@@ -130,8 +130,8 @@ function Navbar() {
                         </Link>
                         <Link to="/User_Dashboards">
                             <li class="active "><a > Dashboards</a></li>
-                           </Link>
-                       
+                        </Link>
+
                     </div>
 
                     <div className="navbar-nav ml-auto action-buttons ">
@@ -145,7 +145,7 @@ function Navbar() {
                                 <div className="dropdown-menu action-form mt-3 nn" id="spn3">
                                     <form action="/examples/actions/confirmation.php" method="post" onSubmit={handleSubmit}>
                                         <p className="hint-text">Sign in with your social media account</p>
-                                        
+
                                         <div className="form-group social-btn clearfix">
                                             <a href="#" className="btn btn-secondary facebook-btn float-left"><i class=" fab fa-facebook-f" aria-hidden="true"></i> Facebook</a>
                                             <a href="#" className="btn btn-secondary google-btn float-right"><i className="fab fa-google" /> Google</a>
@@ -168,16 +168,16 @@ function Navbar() {
                                         <input type="submit" onChange={handleChange}
 
                                             value="Login" className="btn btn-primary btn-block" defaultValue="Login" />
-                                       
-                                       <Link to="/Recruiter_Home_page">
-                                        <div className="text-center  mt-2">
-                                            <a  style={{fontSize:"16px",fontWeight:"900",color:"blue"}}href="#">Are you a Recruiter?</a>
-                                        </div>
+
+                                        <Link to="/Recruiter_Home_page">
+                                            <div className="text-center  mt-2">
+                                                <a style={{ fontSize: "16px", fontWeight: "900", color: "blue" }} href="#">Are you a Recruiter?</a>
+                                            </div>
                                         </Link>
 
-                                        
+
                                     </form>
-                                    
+
                                 </div>
                             </div>
                             <div className="nav-item dropdown">
@@ -194,16 +194,16 @@ function Navbar() {
                                         <div className="form-group">
                                             <input type="text" minlength="10"
                                                 maxlength="10" name="mobile" onChange={handleChange_signup} className="form-control" placeholder="mobile no" required="required" />
-                                                
+
                                         </div>
                                         <div className="form-group">
                                             <label className="form-check-label"><input type="checkbox" required="required" /> I accept the <a href="#">Terms &amp; Conditions</a></label>
                                         </div>
                                         <input type="submit" value="Register" className="btn btn-primary btn-block" defaultValue="Sign up" />
                                         <Link to="/Recruiter_Home_page">
-                                        <div className="text-center  mt-2">
-                                            <a  style={{fontSize:"16px",fontWeight:"900",color:"blue"}}href="#">Are you a Recruiter?</a>
-                                        </div>
+                                            <div className="text-center  mt-2">
+                                                <a style={{ fontSize: "16px", fontWeight: "900", color: "blue" }} href="#">Are you a Recruiter?</a>
+                                            </div>
                                         </Link>
                                     </form>
                                 </div>

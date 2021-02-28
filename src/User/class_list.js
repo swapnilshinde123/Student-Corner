@@ -208,7 +208,7 @@ function class_list() {
                             </a>
                             <ul>
                               <li>Creative Agency</li>
-                              <li><i className="fas fa-map-marker-alt" />Athens, Greece</li>
+                              <li><i className="fas fa-map-marker-alt" />pune</li>
                               <li>$3500 - $4000</li>
                             </ul>
                           </div>
@@ -230,7 +230,7 @@ function class_list() {
                             </a>
                             <ul>
                               <li>Creative Agency</li>
-                              <li><i className="fas fa-map-marker-alt" />Athens, Greece</li>
+                              <li><i className="fas fa-map-marker-alt" />pune</li>
                               <li>$3500 - $4000</li>
                             </ul>
                           </div>
@@ -252,7 +252,7 @@ function class_list() {
                             </a>
                             <ul>
                               <li>Creative Agency</li>
-                              <li><i className="fas fa-map-marker-alt" />Athens, Greece</li>
+                              <li><i className="fas fa-map-marker-alt" />pune</li>
                               <li>$3500 - $4000</li>
                             </ul>
                           </div>
@@ -274,7 +274,7 @@ function class_list() {
                             </a>
                             <ul>
                               <li>Creative Agency</li>
-                              <li><i className="fas fa-map-marker-alt" />Athens, Greece</li>
+                              <li><i className="fas fa-map-marker-alt" />pune</li>
                               <li>$3500 - $4000</li>
                             </ul>
                           </div>
@@ -296,7 +296,7 @@ function class_list() {
                             </a>
                             <ul>
                               <li>Creative Agency</li>
-                              <li><i className="fas fa-map-marker-alt" />Athens, Greece</li>
+                              <li><i className="fas fa-map-marker-alt" />pune</li>
                               <li>$3500 - $4000</li>
                             </ul>
                           </div>
@@ -318,7 +318,7 @@ function class_list() {
                             </a>
                             <ul>
                               <li>Creative Agency</li>
-                              <li><i className="fas fa-map-marker-alt" />Athens, Greece</li>
+                              <li><i className="fas fa-map-marker-alt" />pune</li>
                               <li>$3500 - $4000</li>
                             </ul>
                           </div>

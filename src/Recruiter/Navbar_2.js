@@ -125,8 +125,8 @@ function Navbar() {
 
 
                         <Link to="/Recruiter_Home_page">
-                            <li class="active "><a >Home</a></li>
-
+                            <li class="active  "><a >Home</a></li>
+                            
                         </Link>
                         <Link to="/Profile_create">
                             <li class="active "><a >Profile_create</a></li>
@@ -135,7 +135,7 @@ function Navbar() {
                             <li class="active "><a >Job_Profile_create</a></li>
                         </Link>
                         <Link to="/Recruiter_Dashboards">
-                            <li class="active "><a >Recruiter Dashboards</a></li>
+                            <li class="active "><a >Class Dashboards</a></li>
                         </Link>
                         <Link to="/Job_Dashboards">
                             <li class="active "><a >Job Dashboards</a></li>
