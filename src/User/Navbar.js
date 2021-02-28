@@ -1,11 +1,15 @@
 import React, { useState } from "react";
+import { connect } from "react-redux";
 import { Link, useHistory } from "react-router-dom";
 import Axios from "../axios";
 import "./Navbar.css";
 import { toast } from "react-toastify";
 import Logo from "../icon/logo.png"
+import "react-toastify/dist/ReactToastify.css";
+import action from "../Redux/Action";
 toast.configure();
-function Navbar() {
+const { setuser } = action 
+function Navbar(props) {
 
     const history = useHistory();
     const [data, setData] = useState();
@@ -25,12 +29,13 @@ function Navbar() {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(data);
-        Axios.post("/signin", data)
+        Axios.post("/auth/signin/applicant", data)
             .then((res) => {
                 console.log(res.data)
                 localStorage.setItem("token", res.data.token);
-                localStorage.setItem("user", res.data.user.email);
-                setUser(res.data.user.email)
+                localStorage.setItem("user", res.data.saveduser.email);
+                props.setuser(res.data.saveduser.email)
+                setUser(res.data.saveduser.email)
                 console.log("user", user);
                 var btn1 = document.getElementById("spn3")
                 var btn2 = document.getElementById("spn4")
@@ -73,15 +78,16 @@ function Navbar() {
     const handleSubmit_signup = (e) => {
         e.preventDefault();
         {
-            Axios.post("/signup", Data1)
+            Axios.post("/auth/signup/applicant", Data1)
                 .then((res) => {
                     {
                         console.log(res.data);
                         localStorage.setItem("token", res.data.token);
-                        localStorage.setItem("user", res.data.user.name);
-                        setUser(res.data.user.email)
+                        localStorage.setItem("user", res.data.saveduser.email);
+                        props.setuser(res.data.saveduser.email)
+                        setUser(res.data.saveduser.email)
                         console.log(user);
-                        toast(`Registered Successfully`,
+                        toast.info(`Registered Successfully`,
                             {
                                 position: toast.POSITION.TOP_CENTER,
                                 autoClose: 3000,
@@ -92,7 +98,7 @@ function Navbar() {
                 })
                 .catch((err) => {
                     console.log(err.response)
-                    toast(`${err.response.data}`, {
+                    toast.info(`${err.response.data}`, {
                         position: toast.POSITION.TOP_CENTER,
                         autoClose: false,
                     });
@@ -136,8 +142,8 @@ function Navbar() {
 
                     <div className="navbar-nav ml-auto action-buttons ">
                         {user ? (<>
-                            <a href="#" className=" btn btn-primary login-btn mr-4" onClick={handleChange_logout}>Logout</a>
-                            <a href="#" style={{ "textTransform": "lowercase" }} className="  btn btn-primary login-btn mr-4">{user}</a>
+                            <a href="#" className=" btn btn-primary  login_button  login-btn mr-4" onClick={handleChange_logout}>Logout</a>
+                            <a href="#" style={{ "textTransform": "lowercase" }} className=" btn btn-primary login_button  login-btn mr-4">{user}</a>
                         </>) : (<>
 
                             <div className="nav-item dropdown mr-4 ">
@@ -171,7 +177,7 @@ function Navbar() {
 
                                         <Link to="/Recruiter_Home_page">
                                             <div className="text-center  mt-2">
-                                                <a style={{ fontSize: "16px", fontWeight: "900", color: "blue" }} href="#">Are you a Recruiter?</a>
+                                                <p style={{ fontSize: "16px", fontWeight: "900", color: "red" }} href="#">Are you a Recruiter?</p>
                                             </div>
                                         </Link>
 
@@ -202,7 +208,7 @@ function Navbar() {
                                         <input type="submit" value="Register" className="btn btn-primary btn-block" defaultValue="Sign up" />
                                         <Link to="/Recruiter_Home_page">
                                             <div className="text-center  mt-2">
-                                                <a style={{ fontSize: "16px", fontWeight: "900", color: "blue" }} href="#">Are you a Recruiter?</a>
+                                                <p style={{ fontSize: "16px", fontWeight: "900", color: "red" }} href="#">Are you a Recruiter?</p>
                                             </div>
                                         </Link>
                                     </form>
@@ -217,6 +223,23 @@ function Navbar() {
         </div>
     )
 }
+function mapstatetoprops(state) {
+    console.log(state)
+    return {
+        user: state.user,
+        
+    }
 
-export default Navbar
+}
+function mapDispatchToProps(dispatch) {
+    return {
+        setuser: (data) => {
+            dispatch(setuser(data));
+        }
+    }
+
+}
+
+
+export default connect(mapstatetoprops, mapDispatchToProps) (Navbar)
 

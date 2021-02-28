@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from "react";
 import Navbar from "./User/Navbar"
 import { BrowserRouter as Router,Switch,Route} from "react-router-dom";
 import User_Home_page from "./User/User_Home_page"
@@ -16,7 +16,26 @@ import Recruiter_Class_profile from './Recruiter/Recruiter_Class_profile';
 import Recruiter_Dashboards from "./Recruiter/Recruiter_Dashboards";
 import Navbar2 from "./Recruiter/Navbar_2"
 import Job_Dashboards from "./Recruiter/Job_Dashboards"
+import Axios from "../src/axios";
 function App() {
+  useEffect(() => {
+    let token = localStorage.getItem("token");
+    if (!token) return null;
+    
+    else {
+      Axios.get("/auth/verifyAccessToken", {
+        headers: { Authorization: `Bearer ${token}` },
+      })
+        .then((res) => {
+          
+          console.log(res);
+          
+        })
+        .catch((err) => {
+          console.log(err.response);
+        });
+    }
+  }, []);
   return (
     <div>
    <Router>
