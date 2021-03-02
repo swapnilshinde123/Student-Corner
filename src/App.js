@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { connect } from "react-redux";
 import Navbar from "./User/Navbar"
 import { BrowserRouter as Router,Switch,Route} from "react-router-dom";
 import User_Home_page from "./User/User_Home_page"
@@ -18,25 +19,26 @@ import Navbar2 from "./Recruiter/Navbar_2"
 import Job_Dashboards from "./Recruiter/Job_Dashboards"
 import Axios from "../src/axios";
 import Footer from "./User/Footer"
-function App() {
+import action from "./Redux/Action";
+const { setuser } = action;
+function App(props) {
   useEffect(() => {
     let token = localStorage.getItem("token");
     if (!token) return null;
-    
     else {
       Axios.get("/auth/verifyAccessToken", {
         headers: { Authorization: `Bearer ${token}` },
       })
         .then((res) => {
-          
           console.log(res);
-          
+          props.setuser(res.data.email);
         })
         .catch((err) => {
-          console.log(err.response);
+          return null;
         });
     }
   }, []);
+  console.log(props.user);
   return (
     <div>
    <Router>
@@ -124,5 +126,18 @@ function App() {
     </div>
   )
 }
+function mapstatetoprops(state) {
+  console.log(state);
+  return {
+    user: state.user,
+  };
+}
+function mapDispatchToProps(dispatch) {
+  return {
+    setuser: (data) => {
+      dispatch(setuser(data));
+    },
+  };
+}
 
-export default App
+export default connect(mapstatetoprops, mapDispatchToProps)(App);
