@@ -1,24 +1,95 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Profile_create.css";
 import $ from "jquery";
 import axios from "../axios";
+import { toast } from "react-toastify";
+import { useHistory } from "react-router-dom";
+toast.configure();
 
 function Profile_create() {
-  $(document).ready(function () {
-    var current_fs, next_fs, previous_fs; //fieldsets
-    var opacity;
-    var current = 1;
-    var steps = $("fieldset").length;
+  const [res, setres] = useState(false);
+  let token = localStorage.getItem("token");
 
-    setProgressBar(current);
+  useEffect(() => {
+    if (res) {
+      axios
+        .post("/class", data, {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        })
+        .then((res) => {
+          console.log(res);
+          localStorage.setItem("classId", res.data.clas._id);
+          const imgData = new FormData();
+          imgData.append("image", file);
+          let id = localStorage.getItem("classId");
+          console.log(token);
+          axios
+            .post(`/class/${id}/image`, imgData, {
+              headers: {
+                Authorization: `Bearer ${token}`,
+              },
+            })
+            .then((res) => {
+              console.log(res);
+              toast(`Class Created Successfully`, {
+                position: toast.POSITION.TOP_CENTER,
+                autoClose: 3000,
+              });
+            })
+            .catch((err) => {
+              console.log(err.response);
+            });
+        })
 
-    $(".next").click(function () {
+        .catch((err) => {
+          console.log(err.response);
+        });
+    } else {
+      return null;
+    }
+  }, [res]);
+  const [data, setData] = useState();
+  const [classes, setClass] = useState();
+  const history = useHistory();
+
+  const handleChange = (e) => {
+    console.log(e.target.value, e.target.name);
+    setData((prevState) => ({
+      ...prevState,
+      [e.target.name]: e.target.value,
+    }));
+  };
+  var [file, setFile] = useState(null);
+
+  async function onImageChange(event) {
+    try {
+      setFile(event.target.files[0]);
+    } catch (error) {
+      return null;
+    }
+  }
+  var current_fs, next_fs, previous_fs; //fieldsets
+  var opacity;
+  var current = 1;
+  var steps = $("fieldset").length;
+
+  setProgressBar(current);
+
+  $(".next").click(function () {
+    // const imgData = new FormData();
+    // imgData.append("image", file);
+    // let id = localStorage.getItem("classId");
+    if (this.name == "next image") {
+      console.log("image");
+      console.log(data);
+      setres(true);
+    } else {
       current_fs = $(this).parent();
       next_fs = $(this).parent().next();
-
       //Add Class Active
       $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
-
       //show the next fieldset
       next_fs.show();
       //hide the current fieldset with style
@@ -28,7 +99,6 @@ function Profile_create() {
           step: function (now) {
             // for making fielset appear animation
             opacity = 1 - now;
-
             current_fs.css({
               display: "none",
               position: "relative",
@@ -39,100 +109,51 @@ function Profile_create() {
         }
       );
       setProgressBar(++current);
-    });
-
-    $(".previous").click(function () {
-      current_fs = $(this).parent();
-      previous_fs = $(this).parent().prev();
-
-      //Remove class active
-      $("#progressbar li")
-        .eq($("fieldset").index(current_fs))
-        .removeClass("active");
-
-      //show the previous fieldset
-      previous_fs.show();
-
-      //hide the current fieldset with style
-      current_fs.animate(
-        { opacity: 0 },
-        {
-          step: function (now) {
-            // for making fielset appear animation
-            opacity = 1 - now;
-
-            current_fs.css({
-              display: "none",
-              position: "relative",
-            });
-            previous_fs.css({ opacity: opacity });
-          },
-          duration: 500,
-        }
-      );
-      setProgressBar(--current);
-    });
-
-    function setProgressBar(curStep) {
-      var percent = parseFloat(100 / steps) * curStep;
-      percent = percent.toFixed();
-      $(".progress-bar").css("width", percent + "%");
     }
-
-    $(".submit").click(function () {
-      return false;
-    });
   });
 
-  const [data, setData] = useState();
+  $(".previous").click(function () {
+    current_fs = $(this).parent();
+    previous_fs = $(this).parent().prev();
 
-  const handleChange = (e) => {
-    console.log(e.target.value);
-    setData((prevState) => ({
-      ...prevState,
-      [e.target.name]: e.target.value,
-    }));
-  };
-  var [file, setFile] = useState(null);
+    //Remove class active
+    $("#progressbar li")
+      .eq($("fieldset").index(current_fs))
+      .removeClass("active");
 
-  async function onImageChange(event) {
-    try {
-      console.log(event.target.files[0]);
-      setFile(event.target.files[0]);
-    } catch (error) {
-      return null;
-    }
+    //show the previous fieldset
+    previous_fs.show();
+
+    //hide the current fieldset with style
+    current_fs.animate(
+      { opacity: 0 },
+      {
+        step: function (now) {
+          // for making fielset appear animation
+          opacity = 1 - now;
+
+          current_fs.css({
+            display: "none",
+            position: "relative",
+          });
+          previous_fs.css({ opacity: opacity });
+        },
+        duration: 500,
+      }
+    );
+    setProgressBar(--current);
+  });
+
+  function setProgressBar(curStep) {
+    var percent = parseFloat(100 / steps) * curStep;
+    percent = percent.toFixed();
+    $(".progress-bar").css("width", percent + "%");
   }
 
-  console.log(file);
+  $(".submit").click(function () {
+    return false;
+  });
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const data1 = file;
-    console.log(data1);
-    const data4 = new FormData();
-    data4.append("image", file);
-    // data1.append("file", file);
-    let token = localStorage.getItem("token");
-    if (!token) alert("You are not authorized");
-    setData((prevState) => ({
-      ...prevState,
-      image: data4,
-    }));
-    axios
-      .post("/class/prat/uppload", data4, {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      })
-      .then((res) => {
-        console.log(res);
-      })
-      .catch((err) => {
-        console.log(err.response);
-      });
-  };
-  console.log(data);
   return (
     <div>
       <div className="container-fluid mt-100">
@@ -196,6 +217,9 @@ function Profile_create() {
                     name="next"
                     className="next action-button"
                     defaultValue="Next"
+                    // onClick={() => {
+                    //   handleSubmit("1");
+                    // }}
                   />
                 </fieldset>
                 <fieldset>
@@ -211,12 +235,12 @@ function Profile_create() {
                     <label className="fieldlabels">Activities Name: *</label>
                     <select
                       class="custom-select select mb-3"
-                      name="activities"
+                      name="activites"
                       onChange={handleChange}
                     >
                       <option selected> Select Activities</option>
                       <option value="Sport">Sport</option>
-                      <option value="Programing">Programing</option>
+                      <option value="Programming">Programming</option>
                       <option value="Technical">Technical</option>
                       <option value="Cenimatics">Cenimatics</option>
                       <option value="Hospital">Hospital</option>
@@ -288,12 +312,12 @@ function Profile_create() {
                       <option value="Parttime">Part Time</option>
                       <option value="Remote">Remote</option>
                     </select>
-                    <label className="fieldlabels">Class Fess: *</label>{" "}
+                    <label className="fieldlabels">Class Fees: *</label>{" "}
                     <input
                       type="number"
                       onChange={handleChange}
                       name="fees"
-                      placeholder="Class Fess"
+                      placeholder="Class Fees"
                     />
                     <label className="fieldlabels"> class Duration: *</label>
                     <select
@@ -367,10 +391,10 @@ function Profile_create() {
                         ></textarea>
                       </div>
                     </div>
-                  </div>{" "}
+                  </div>
                   <input
                     type="button"
-                    name="next"
+                    name="next data"
                     className="next action-button"
                     defaultValue="Next"
                   />{" "}
@@ -393,11 +417,10 @@ function Profile_create() {
                     </div>
                     <label className="fieldlabels">Upload Your Photo:</label>
                     <input type="file" name="image" onChange={onImageChange} />
-                    <button onClick={handleSubmit}>submit</button>
                   </div>{" "}
                   <input
                     type="button"
-                    name="next"
+                    name="next image"
                     className="next action-button"
                     defaultValue="Submit"
                   />{" "}
@@ -438,7 +461,7 @@ function Profile_create() {
                     <div className="row justify-content-center">
                       <div className="col-7 text-center">
                         <h5 className="purple-text text-center">
-                          You Have Successfully Profile
+                          You Have Successfully Created Profile
                         </h5>
                       </div>
                     </div>

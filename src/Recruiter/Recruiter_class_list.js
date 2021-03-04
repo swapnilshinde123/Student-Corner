@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import img2 from "../corousel_photo/img6.jpg";
 import "./Recruiter_class_list.css";
 function class_list() {
-  console.log("object");
   return (
     <div>
       <div class="container container1  mt-100 ">
@@ -196,7 +195,7 @@ function class_list() {
                             <img src="assets/img/icon/job-list1.png" alt="" />
                           </a>
                         </div>
-                        <Link to="/Class_profile">
+                        <Link to="/Recruiter_Class_profile">
                           <div className="job-tittle job-tittle2">
                             <a href="#">
                               <h4>Digital Marketer</h4>

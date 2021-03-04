@@ -234,3 +234,9 @@ height: 50vh;
 .navbar .action-form a{
 	color: white !important;
 }
+/* @media screen and (max-width: 411px) {
+	.navbar{
+		width: 95% !important;
+	}
+	
+} */

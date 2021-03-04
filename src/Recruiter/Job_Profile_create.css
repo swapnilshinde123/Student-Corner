@@ -236,3 +236,15 @@ p {
 #msform .action-button{
     background:  #e64964 !important;
 }
+@media screen and (max-width: 360px) {
+    #msform textarea{
+        width: 87.5vw !important;
+    }
+   
+}
+@media screen and (max-width: 320px) {
+    #msform textarea{
+        width: 100vw !important;
+    }
+   
+}
