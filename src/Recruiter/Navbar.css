@@ -165,6 +165,16 @@
 		width: 300px;
 		margin-left: 30px;
 	}
+	
+}@media (max-width: 1200px){
+	
+	.logout{
+		width: 20vw;
+	}
+	.logout1{
+		
+		width: 30vw;
+	}
 }
 @media (max-width: 768px){
 	.navbar .dropdown-menu.action-form {
@@ -186,6 +196,12 @@
 	.sign-up-btn{
 		margin-top: 10px;
 		margin-left:33px ;
+	}
+	.logout{
+		width: 20vw;
+	}
+	.logout1{
+		width: 60vw;
 	}
 }
 .ms{
@@ -216,6 +232,12 @@ height: 50vh;
 		margin-top: 10px;
 		margin-left:33px ;
 	}
+	.logout{
+		width: 40vw;
+	}
+	.logout1{
+		width: 70vw;
+	}
 }
 @media (max-width: 425px){
 	.login_button {
@@ -226,7 +248,12 @@ height: 50vh;
 		margin-top: 10px;
 		margin-left:33px ;
 	}
-
+    .logout{
+		width: 40vw;
+	}
+	.logout1{
+		width: 70vw;
+	}
 }
 /* .btn-primary{
 	padding: 21px 4px !important;
@@ -234,9 +261,3 @@ height: 50vh;
 .navbar .action-form a{
 	color: white !important;
 }
-/* @media screen and (max-width: 411px) {
-	.navbar{
-		width: 95% !important;
-	}
-	
-} */

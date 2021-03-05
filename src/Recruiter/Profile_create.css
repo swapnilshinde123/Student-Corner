@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding:0;
+    padding: 0
 }
 
 html {
@@ -235,14 +235,4 @@ p {
 }
 #msform .action-button{
     background:  #e64964 !important;
-}
-@media screen and (max-width: 360px) {
-    .form-group{
-        margin-left: -25px !important;
-    }
-}
-@media screen and (max-width: 411px) {
-    .form-group{
-        margin-left: -25px !important;
-    }
 }

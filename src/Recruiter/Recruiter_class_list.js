@@ -195,7 +195,7 @@ function class_list() {
                             <img src="assets/img/icon/job-list1.png" alt="" />
                           </a>
                         </div>
-                        <Link to="/Recruiter_Class_profile">
+                        <Link to="/Class_profile">
                           <div className="job-tittle job-tittle2">
                             <a href="#">
                               <h4>Digital Marketer</h4>
