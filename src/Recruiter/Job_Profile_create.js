@@ -99,10 +99,9 @@ function Job_Profile_create() {
                   <li id="payment"><strong>Image</strong></li>
                   <li id="confirm"><strong>Finish</strong></li>
                 </ul>
-                {/* <div className="progress">
+                <div className="progress">
                   <div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin={0} aria-valuemax={100} />
-                </div> fieldsets */}
-                <br /> 
+                </div> <br /> {/* fieldsets */}
                 <fieldset>
                   <div className="form-card">
                     <div className="row">

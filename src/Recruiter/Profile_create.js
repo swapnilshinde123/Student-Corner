@@ -16,9 +16,11 @@ function Profile_create() {
   var steps = $("fieldset").length;
 
   setProgressBar(current);
+  const [data, setData] = useState();
 
   useEffect(() => {
     if (res) {
+      console.log('jatin')
       axios
         .post("/class", data, {
           headers: {
@@ -76,13 +78,12 @@ function Profile_create() {
       return null;
     }
   }, [res]);
-  const [data, setData] = useState();
   const [classes, setClass] = useState();
   var cnt = 25;
   const history = useHistory();
 
   const handleChange = (e) => {
-    console.log(e.target.value, e.target.name);
+    console.log(data);
     setData((prevState) => ({
       ...prevState,
       [e.target.name]: e.target.value,
@@ -104,8 +105,6 @@ function Profile_create() {
     // let id = localStorage.getItem("classId");
     if (this.name == "next image") {
       setdtl(this);
-      console.log("image");
-      console.log(data);
       setres(true);
     } else {
       current_fs = $(this).parent();
@@ -261,7 +260,7 @@ function Profile_create() {
                     <label className="fieldlabels">Activities Name: *</label>
                     <select
                       class="custom-select select mb-3"
-                      name="activites"
+                      name="activities"
                       onChange={handleChange}
                     >
                       <option selected> Select Activities</option>
