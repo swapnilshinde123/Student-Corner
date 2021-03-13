@@ -20,7 +20,7 @@ function Profile_create() {
 
   useEffect(() => {
     if (res) {
-      console.log('jatin')
+      console.log("jatin");
       axios
         .post("/class", data, {
           headers: {
@@ -41,6 +41,7 @@ function Profile_create() {
               },
             })
             .then(function (res) {
+              console.log(res)
               current_fs = $(dtl).parent();
               next_fs = $(dtl).parent().next();
               //Add Class Active
