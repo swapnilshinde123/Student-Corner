@@ -185,16 +185,7 @@ function App(props) {
             exact
             path="/Job"
             render={() => {
-              if (props?.user?.role == "Applicant") {
-                return (
-                  <>
-                    {" "}
-                    <Navbar />
-                    <Job />
-                    <Footer />
-                  </>
-                );
-              } else if (props?.user?.role == "Recruiter") {
+              if (props?.user?.role == "Recruiter") {
                 return (
                   <>
                     {" "}
@@ -204,11 +195,14 @@ function App(props) {
                   </>
                 );
               } else {
-                // toast(`Please Login first`, {
-                //   position: toast.POSITION.TOP_CENTER,
-                //   autoClose: 3000,
-                // });
-                return <Redirect to="/" />;
+                return (
+                  <>
+                    {" "}
+                    <Navbar />
+                    <Job />
+                    <Footer />
+                  </>
+                );
               }
             }}
           ></Route>
